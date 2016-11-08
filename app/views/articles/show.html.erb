@@ -1,0 +1,10 @@
+<h1><%= @article.title %></h1>
+<hr>
+<h2><%= @article.created_at %></h2>
+<hr>
+<p><%= @article.content %></p>
+
+<hr>
+<button><%= link_to "Back to all articles", articles_path %></button>
+
+<button><%= link_to "Delete this artcile", delete_article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %></button>
